@@ -1,0 +1,253 @@
+.testimonials{
+    min-width: 100vw;
+    margin-bottom: 10rem;
+}
+
+.testimonials h1{
+    padding: 0 10%;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #091e42;
+    line-height: 90px;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    margin-bottom: 5rem;
+}
+
+.testimonials h1 span{
+    font-weight: 600;
+}
+
+.testimonials .testi-container{
+    overflow-x: auto;
+    min-width: 100%;
+}
+
+.testimonials .testi-container .testi-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(230px,1fr));
+    gap: 1.5rem;
+    padding: 0 10%;
+    min-width: 100%;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+
+
+.testimonials .testi-container::-webkit-scrollbar{
+    display: none;
+}
+
+.testimonials .testi-container .card{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    /* margin-bottom: auto; */
+}
+
+.testimonials .testi-container .card .card-info{
+    padding: 1rem;
+}
+
+.testi-container .card .card-info .profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testi-container .card .card-info .profile-container .subdesc{
+    font-size: 0.9rem;
+}
+
+.testi-container .card .card-info .profile-container .profile-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.testi-container .card .card-info .profile-container .profile-info img{
+    width: 2.5rem;
+    display: block;
+}
+
+.testi-container .card .card-info h3{
+    font-weight: 500;
+    font-size: 1.13rem;
+    color: #091e42;
+    line-height: 22px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.testi-container .card .card-info .desc-card{
+    font-weight: 400;
+    color: #243757;
+    font-size: 0.88rem;
+    line-height: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.testimonials .testi-container .card .img-card{
+    width: 100%;
+    display: block;
+}
+
+.testimonials .btn-container{
+    padding: 0 10%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.testimonials .btn-container .btn{
+    background: none;
+    color: #000;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #091e42;
+}
+
+.testimonials .btn-container .btn:hover{
+    background: #091e42;
+    color: #fff;
+}
+
+.testimonials .btn-container .btn:disabled{
+    background: none;
+    border: 0.5px solid #516b99;
+    color: #516b99;
+    pointer-events: none;
+}
+
+.testimonials .testi-container .card-1{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.testimonials .testi-container .card-2{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
+.testimonials .testi-container .card-3{
+    grid-column: 2;
+    grid-row: 2/3;
+}
+
+.testimonials .testi-container .card-4{
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.testimonials .testi-container .card-5{
+    grid-column: 4;
+    grid-row: 1/2;
+}
+
+.testimonials .testi-container .card-6{
+    grid-column: 4;
+    grid-row: 2/3;
+}
+
+.testimonials .testi-container .card-7{
+    grid-column: 5;
+    grid-row: 1/3;
+}
+
+.testimonials .testi-container .card-8{
+    grid-column: 6;
+    grid-row: 1/2;
+
+}
+
+.testimonials .testi-container .card-9{
+    grid-column: 6;
+    grid-row: 2/3;
+}
+
+@media (max-width: 1200px){
+    .testimonials{
+        width: 90vw;
+        margin-bottom: 5%;
+    }
+
+    .testimonials h1{
+        font-size: 3rem;
+        line-height: 50px;
+        margin-bottom: 3rem;
+        padding: 0 5%;
+    }
+
+    .testimonials .testi-container .testi-wrapper{
+        grid-template-columns: repeat(6, minmax(200px,1fr));
+        gap: 1rem;
+        min-width: 1340px;
+        margin-bottom: 2rem;
+        padding: 0 5%;
+    }
+
+    
+
+    .testimonials .testi-container .card .card-info{
+        padding: 0.9rem;
+    }
+
+    .testimonials .testi-container .card .card-info .rating{
+        font-size: 0.9rem;
+    }
+
+    .testi-container .card .card-info .profile-container .profile-info{
+        gap: 0.4rem;
+    }
+    .testi-container .card .card-info .profile-container .profile-info img{
+        width: 2rem;
+    }
+
+    .testi-container .card .card-info .profile-container .profile-info .name{
+        font-size: 0.9rem;
+    }
+
+    .testi-container .card .card-info .profile-container .subdesc{
+        font-size: 0.8rem;
+    }
+    
+    .testi-container .card .card-info h3{
+        font-size: 0.88rem;
+        line-height: 18px;
+    }
+    
+    .testi-container .card .card-info .desc-card{
+        font-size: 0.75rem;
+        line-height: 16px;
+    }
+}
+
+
+@media (max-width: 1170px){
+
+
+    .testimonials .testi-container .testi-wrapper{
+        grid-template-columns: repeat(6, minmax(220px,1fr));
+        min-width: 1400px;
+    }
+
+    .testimonials .btn-container{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .testimonials .btn-container .btn{
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+
+}

@@ -1,0 +1,241 @@
+ .slider-container {
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    padding-right: 1.85rem;
+  }
+  
+  .slide {
+    min-width: 50%;
+    min-height: 100%;
+  }
+  
+  .slider-content {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 0px;
+    display: flex;
+    border: 0.5px solid #d5d5d5;
+    gap: 1rem;
+    min-height: 100%;
+  }
+  
+  .slider-content .img-container{
+    flex: 1;
+    background: #f5f5f5;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .slider-content img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-content .expert-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .slider-content .expert-info .header-info{
+    flex: 1;
+  }
+
+  .slider-content .expert-info h2{
+    font-size: 1.87rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #091e42;
+    line-height: 38px;
+    margin: 0;
+  }
+
+  .slider-content .expert-info span{
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.75rem;
+    color: #7a8699;
+    line-height: 1rem;
+  }
+
+  .slider-content .expert-info p{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #091e42;
+    line-height: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .slider-content .expert-info .social-links{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .slider-content .expert-info .social-links .icon{
+    border: 0.5px solid #091e42;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    color: #354764;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .slider-content .expert-info .social-links .icon:hover{
+    background: #091e42;
+    color: #fff;
+  }
+
+  .slider-content .expert-info .btn-expert{
+    background: #091e42;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .slider-content .expert-info .btn-expert:hover{
+    background: #103679;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: 20px;
+    padding-right: 1rem;
+  }
+
+ 
+  .slider-button {
+    background: none;
+    color: #000;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #091e42;
+  }
+  
+  .slider-button:hover {
+    background: #091e42;
+    color: #fff;
+  }
+  
+  .slider-button:disabled {
+    background: none;
+    border: 0.5px solid #516b99;
+    color: #516b99;
+    pointer-events: none;
+  }
+
+
+  @media (max-width: 1200px){
+    .slider-content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .slider-content .img-container{
+      flex: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .slider-content img {
+      width: 50%;
+      height: auto;
+    }
+
+    .slider-content .expert-info h2{
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (max-width: 1170px){
+    .slider-content {
+      padding: 20px;
+    }
+
+    .slider-content .expert-info h2{
+      font-size: 1.70rem;
+    }
+
+    .slider-content .expert-info .social-links .icon{
+      font-size: 1.1rem;
+    }
+
+    .slider-content .expert-info .btn-expert{
+      font-size: 0.9rem;
+      padding: 0.8rem 0;
+    }
+
+    .slider-button {
+      font-size: 0.9rem;
+      padding: 0.8rem;
+    }
+
+    .slider-controls {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 750px){
+    .slider-content .expert-info h2{
+      font-size: 1.4rem;
+      line-height: 25px;
+    }
+    .slider-content .expert-info span{
+      font-size: 0.7rem;
+    }
+    .slider-content img {
+      width: 70%;
+      height: auto;
+    }
+    .slider-content .img-container{
+      flex: 1;
+    }
+    .slider-content .expert-info .social-links{
+      margin-bottom: 1rem;
+    }
+
+    .slider-content .expert-info .btn-expert{
+      font-size: 0.8rem;
+    }
+    .slider-content .expert-info .social-links .icon{
+      font-size: 0.9rem;
+    }
+    .slider-controls {
+      display: flex;
+      justify-content: center;
+    }
+  
+  }
