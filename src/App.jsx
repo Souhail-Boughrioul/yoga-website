@@ -1,33 +1,25 @@
-import About from "./components/About"
-import Experts from "./components/Experts"
+import { Route, Router, Routes } from "react-router-dom"
 import Footer from "./components/footer/Footer"
-import Hero from "./components/Hero"
-import Journey from "./components/Journey"
-import Magazine from "./components/magazine/Magazine"
 import NavBar from "./components/NavBar"
-import Products from "./components/Products"
-import Questions from "./components/q&a/Questions"
-import Testimonials from "./components/testimonials/Testimonials"
-import Tool from "./components/Tool"
+import HomePage from "./pages/HomePage"
+import HelloPage from "./pages/hello/HelloPage"
 
 
 
 function App() {
 
   return (
-    <main className="main">
+    <div className="app-container">
       <NavBar/>
-      <Hero/>
-      <Products/>
-      <About/>
-      <Journey/>
-      <Experts/>
-      <Tool/>
-      <Testimonials/>
-      <Magazine/>
-      <Questions/>
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path='/hello' element={<HelloPage/>}/>
+        </Routes>
+      </main>
       <Footer/>
-    </main>
+    </div>
+    
   )
 }
 

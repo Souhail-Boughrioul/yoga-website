@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -9,10 +10,10 @@ const NavBar = () => {
   return (
     <div className="navbar">
        <nav className="container nav-content">
-            <div className="logo">HeyWellness</div>
+            <div className="logo"><Link to="/" >HeyWellness</Link></div>
             <button className="hamburger" onClick={toggleNav}><i className="fa-solid fa-bars"></i></button>
             <ul className="nav-list" >
-                <li><a href="#" className="link">HeyZen</a></li>
+                <li><Link to="/hello" className="link">HeyZen</Link></li>
                 <li><a href="#" className="link">HeyFit</a></li>
                 <li className="dropdown">
                    <a href="#" className="dropdown-toggle link">FreeTools</a>

@@ -16,6 +16,11 @@ body{
 
 }
 
+.app-container{
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  min-height: 100vh; 
+}
 a{
   text-decoration: none;
 }
@@ -54,6 +59,7 @@ ul{
   font-size: 2rem;
   font-weight: bold;
   color: #003876;
+  outline: none;
 }
 
 .nav-content .nav-list{
@@ -91,6 +97,7 @@ ul{
   margin: 0;
   min-width: 150px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
 }
 
 .dropdown-menu li{
