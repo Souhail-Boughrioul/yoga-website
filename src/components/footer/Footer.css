@@ -21,6 +21,7 @@
 .footer-content .footer-head .col-1 img{
     width: 80%;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .footer-content .footer-head .col-1 .location{

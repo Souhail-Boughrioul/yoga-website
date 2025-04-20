@@ -1,6 +1,7 @@
 import { CiLocationOn } from "react-icons/ci"
 import './Footer.css'
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="container footer-content">
             <div className="footer-head">
                 <div className="col-1">
-                    <img src="src/assets/heywellness-logo.svg" alt="" />
+                    <Link to='/'><img src="src/assets/heywellness-logo.svg" alt="" /></Link>
                     <div className="location">
                         <CiLocationOn />
                         <p className="address">86-90 Paul Street, London, EC2A 4NE, United Kingdom</p>

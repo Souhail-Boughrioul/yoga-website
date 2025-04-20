@@ -266,3 +266,24 @@ export const QUESTIONS = [
         desc: 'At HeyWellness, we believe true wellness begins with harmony between mind and body. Drawing from the diverse experiences within our team, our apps offer a unique blend of workouts, mental exercises, affirmations, and mindfulness practices—designed to nurture holistic health and help you thrive.',
     }
 ]
+
+export const STEPS = [
+    {
+        id: 1,
+        title: 'Assess your starting point',
+        desc: 'Define your current health and goals with our interactive quiz.',
+        show: true,
+    },
+    {
+        id: 2,
+        title: 'Get your personalized program',
+        desc: 'We create a unique program just for you. Everyone’s path to wellness is unique, and we’re here to guide you through it.',
+        show: false,
+    },
+    {
+        id: 3,
+        title: 'Build lasting habits',
+        desc: 'Start forming habits to create lasting changes in your well-being journey.',
+        show: false,
+    },
+]

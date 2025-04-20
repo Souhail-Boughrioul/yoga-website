@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
        <nav className="container nav-content">
-            <div className="logo"><Link to="/" >HeyWellness</Link></div>
+            <Link className="logo" to="/" >HeyWellness</Link>
             <button className="hamburger" onClick={toggleNav}><i className="fa-solid fa-bars"></i></button>
             <ul className="nav-list" >
                 <li><Link to="/hello" className="link">HeyZen</Link></li>

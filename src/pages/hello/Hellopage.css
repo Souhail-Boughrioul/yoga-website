@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    margin-bottom: 10rem;}
+    margin-bottom: 10rem;
+}
 
 .container{
     width: 80vw;
@@ -107,7 +108,10 @@
     background: #f3f9ff;
     overflow: hidden;
     padding: 4rem 0;
-
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mental .title{
@@ -128,12 +132,9 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
-    margin-bottom: 2rem;
-
 }
 
 .mental .row-top{
-    padding-right: 100rem;
     transform: translateX(-500px);
 }
 
@@ -151,6 +152,12 @@
     min-height: 160px;
     border-radius: 1.5rem;
     overflow: hidden;
+}
+
+.mental .row-bottom .item-4 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .mental .row .item-1 img{
@@ -200,6 +207,36 @@
     border-radius: 1.5rem;
 }
 
+.mental .row-bottom .item-2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    min-width: 350px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+}
+
+.mental .row-bottom .item-2 img{
+    width: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mental .row-bottom .item-2 p{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #42526d;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
 .mental .row .item-3 img{
     width: 2rem;
     margin-bottom: 0.5rem;
@@ -244,6 +281,618 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* ********* programs section */
+.programs{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.programs .program-title{
+    display: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #091e42;
+    line-height: 48px;
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.programs-content{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: 2fr 1.2fr;
+    gap: 0.75rem;
+}
+
+
+.prog-info h2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+    color: #091e42;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.prog-info .card-1{
+    background: #3395ff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: url('src/assets/yoga.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-prog{
+    background: #3395ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: url('src/assets/yoga.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-2{
+    background: url('src/assets/adhd.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-3{
+    background: url('src/assets/anxiety.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-4{
+    background: url('src/assets/meditation.webp');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.card-5{
+    background: url('src/assets/trauma.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-6{
+    background: url('src/assets/audio.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-prog::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to top,
+    #0000008f,
+    #ffffff06
+  );
+    pointer-events: none;
+}
+
+.card-prog > *{
+    position: relative;
+    z-index: 1;
+}
+
+.prog-info .card-1::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to top,
+    #0000008f,
+    #ffffff06
+  );
+    pointer-events: none;
+}
+
+.prog-info .card-1 > *{
+    position: relative;
+    z-index: 1;
+}
+
+.prog-info .card-1 h3{
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.card-prog h3{
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.card-prog .card-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-prog .card-info p{
+    font-size: 1rem;
+    line-height: 21px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.prog-info .card-1 .card-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.prog-info .card-1 .card-info p{
+    font-size: 1rem;
+    line-height: 21px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+}
+
+.prog-info .card-1 .card-info .btn{
+    background: #155292;
+    color: #fff;
+    padding: 0.9rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.prog-info .card-1 .card-info .btn:hover{
+    transform: rotate(45deg);
+    background: #fff;
+    color: #155292;
+}
+
+.card-prog .card-info .btn{
+    background: #155292;
+    color: #fff;
+    padding: 0.9rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-prog .card-info .btn:hover{
+    transform: rotate(45deg);
+    background: #fff;
+    color: #155292;
+}
+
+/* ******** steps */
+.steps{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.steps-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-step{
+    background: #f3f9ff;
+    display: flex;
+    border-radius: 2rem;
+    align-items: center;
+}
+
+.card-step .step-title{
+    font-size: 10rem;
+    margin: 0;
+    margin-left: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-step .card-info{
+    text-align: center;
+    flex: 1;
+    padding: 2rem;
+    margin: 0 10%;
+}
+
+.step-2{
+    background: #eeeefb !important;
+}
+
+.card-step .card-info .title{
+    font-size: 2.63rem;
+    margin: 0;
+    color: #091e42;
+    font-weight: 700;
+    line-height: 55px;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-step .card-info .desc{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: #42526d;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0;
+}
+
+.card-step .card-info .btn{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 20px;
+    background: #3395ff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 4rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card-step .card-info .btn:hover{
+    background: #003b79;
+}
+
+/******** coachs */
+.coachs{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.coachs-content{
+    width: 80vw;
+}
+
+.coachs-content .header{
+    font-size: 2.63rem;
+    margin-bottom: 3rem;
+    color: #091e42;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ********** well experts */
+.well-experts{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.well-experts .well-content{
+    max-width: 80vw;
+    background-image: url('src/assets/list-banner-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right;
+    min-height: 60vh;
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.well-content .well-info{
+    background: #fff;
+    width: 45%;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+}
+
+.well-content .well-info .title{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #091e42;
+    line-height: 54px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+}
+
+.well-content .well-info .type{
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.well-content .well-info .type .icon{
+    color: #76c8ee;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.well-content .well-info .type .desc{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 21px;
+    color: #42526d;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.well-content .well-info .type .desc span{
+    font-weight: 600;
+    color: #15294b;
+}
+
+.well-content .well-info .btn{
+    background: #3e9bff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.well-content .well-info .btn:hover{
+    background: #003b79;
+}
+
+/* ****research */
+.research{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.research-content{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    height: 80vh;
+    gap: 2rem;
+}
+
+.extensive{
+    grid-row: 1/3;
+    background: url('src/assets/yoga-feature.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.extensive::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        #0000008f,
+        #ffffff06
+      );
+    pointer-events: none;
+    border-radius: 2rem;
+}
+
+.extensive > *{
+    position: relative;
+    z-index: 1;
+}
+
+.extensive .research-info{
+    padding: 2rem;
+    width: 60%;
+}
+
+.extensive .research-info .research-title{
+    margin: 0;
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: 46px;
+    font-family: "Poppins", sans-serif;
+}
+
+.extensive .research-info .research-desc{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    line-height: 21px;
+}
+
+.extensive .research-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    padding: 2rem;
+    width: 40%;
+}
+
+.extensive .research-bottom h1{
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.extensive .research-bottom p{
+    font-weight: 500;
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    line-height: 21px;
+    
+}
+
+.extensive .btn{
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    background: #155292;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: all 0.3s;
+}
+
+.extensive .btn:hover{
+    transform: rotate(45deg);
+    background: #091e42;
+}
+
+
+.expert{
+    background: #091e42;
+    border-radius: 2rem;
+    padding: 2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+}
+
+.expert .info h1{
+    margin: 0;
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 36px;
+
+}
+
+.expert .info p{
+    font-size: 0.88rem;
+    color: #fff;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.expert .btn{
+    background: #3395ff;
+    border: none;
+    padding: 0.8rem 0;
+    width: 60%;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.familiar{
+    background: #bfe6f7;
+    border-radius: 2rem;
+    padding: 2rem 1.2rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.familiar h1{
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0;
+    color: #091e42;
+}
+
+.familiar p{
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #42526d;
+    line-height: 18px;
+}
+
+.familiar .btn{
+    background: #155292;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 0.2rem solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 0.5rem;
+}
+
+.familiar .btn:hover{
+    transform: rotate(45deg);
+    background: #091e42;
+}
+
 @media (max-width: 1200px) {
     .container{
         width: 90vw;
@@ -254,6 +903,62 @@
         line-height: 60px;
         margin: 0;
     }
+
+    /* **** programs */
+    .programs-content{
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .programs{
+        margin: 5rem 0;
+    }
+
+    .prog-info h2{
+        display: none;
+    }
+
+    .programs .program-title{
+        display: block;
+    }
+
+    /* **** steps */
+    .steps-container{
+        width: 90vw;
+        gap: 1.5rem;
+    }
+    .steps{
+        margin: 5rem 0;
+    }
+
+    /* ***** coachs */
+    .coachs{
+        margin-bottom: 5rem;
+    }
+    
+    .coachs-content{
+        width: 90vw;
+    }
+    
+    /* **** well experts */
+    .well-experts{
+        margin-bottom: 5rem;
+    }
+    
+    .well-experts .well-content{
+        width: 90vw;
+        padding: 2rem;
+    }
+
+    /* **** research */
+    .research{
+        margin-bottom: 5rem;
+    }
+    .research-content{
+        width: 90vw;
+    }
+    
 }
 
 @media (max-width: 1170px){
@@ -299,4 +1004,306 @@
         display: none;
     }
 
+    /* mental */
+    .mental{
+        padding: 2rem 0;
+    }
+
+    .mental .title{
+        font-size: 2.4rem;
+    }
+
+    .mental .row{
+        gap: 1.2rem;
+    }
+
+    .mental .row .item-1{
+        min-width: 250px;
+        min-height: 140px;
+    }
+
+    .mental .row .item-4{
+        min-width: 250px;
+        min-height: 140px;
+    }
+
+    .mental .row .item-2{
+        font-size: 1.9rem;
+        line-height: 30px;
+        min-width: 260px;
+        min-height: 140px;
+        padding: 0 0.9rem;
+    }
+
+    .mental .row-bottom .item-2 img{
+        width: 1.8rem;
+    }
+
+    .mental .row-bottom .item-2 p{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .mental .row .item-3 img{
+        width: 1.8rem;
+    }
+    
+    .mental .row .item-3 p{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    .mental .row .item-5{
+        font-size: 1.9rem;
+        line-height: 30px;
+        min-width: 330px;
+        min-height: 140px;
+        padding: 0 1.9rem;
+    }
+    
+    .mental .row .item-5 img{
+        width: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .mental .row .item-5 p{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+
+    /* ****programs */
+    .programs .program-title{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .card-prog h3{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .prog-info .card-1 h3{
+        font-size: 1.5rem;
+        line-height: 30px; 
+    }
+
+    /* **** steps */
+    .card-step .step-title{
+        font-size: 7rem;
+    }
+    
+    .card-step .card-info{
+        padding: 1rem;
+        margin: 0 5%;
+    }
+
+    .card-step .card-info .title{
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+    
+    .card-step .card-info .desc{
+        font-size: 1.1rem;
+        line-height: 20px;
+    }
+    
+    .card-step .card-info .btn{
+        font-size: 0.9rem;
+    }
+
+    /* ***** coachs */
+    .coachs-content .header{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 40px;
+    }
+
+    /* **** well experts */
+    .well-experts .well-content{
+        min-height: 80vh;
+        display: flex;
+        align-items: flex-end;    
+        padding: 1.5rem;
+    }
+    
+    .well-content .well-info{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .well-content .well-info .title{
+        font-size: 2rem;
+        line-height: 44px;
+    }
+
+    .well-content .well-info .type .desc{
+        font-size: 0.9rem;
+        line-height: 19px;
+    }
+    
+    
+    .well-content .well-info .btn{
+        font-size: 0.9rem;
+    }
+
+    .well-content .well-info .type .icon{
+        font-size: 1.2rem;
+    }
+
+    /* ****research */
+    .research-content{
+        gap: 1.5rem;
+    }
+    
+    .extensive .research-info .research-title{
+        font-size: 2rem;
+        font-family: 36px;
+    }
+    
+    .extensive .research-info .research-desc{
+        font-size: 0.9rem;
+        line-height: 19px;
+    }
+
+    .extensive .research-bottom h1{
+        font-size: 2rem;
+    }
+    
+    .extensive .research-bottom p{
+        font-size: 0.9rem;
+        line-height: 19px;
+        
+    }
+
+    .extensive .btn{
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .expert .info h1{
+        font-size: 1.5rem;
+        line-height: 30px;
+    
+    }
+
+    .familiar h1{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    
+    
+    .familiar .btn{
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .strength .strength-content .strength-title{
+        font-size: 3rem;
+        line-height: 45px;
+        margin: 0;
+    }
+
+    /* ***** mental */
+    .mental .title{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    /* **** programs */
+    .programs-content{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .programs{
+        margin: 3rem 0;
+    }
+
+    .programs .program-title{
+        margin: 0 10%;
+        margin-bottom: 2rem;
+    }
+
+    /* **** steps */
+    .card-step .step-title{
+        display: none;
+    }
+
+     /* **** well experts */
+     .well-experts .well-content{
+        min-height: 90vh;  
+        padding: 1.2rem;
+    }
+    
+    .well-content .well-info{
+        padding: 0.8rem;
+    }
+
+    .well-content .well-info .title{
+        font-size: 1.5rem;
+        line-height: 34px;
+    }
+
+    .well-content .well-info .type .icon{
+        font-size: 1.1rem;
+    }
+
+    /* **** research */
+    .research-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+        min-height: 90vh;
+    }
+    
+    .extensive{
+        grid-row: 1/2;
+        background-position: top;
+    }
+
+    .extensive .research-bottom{
+        display: none;
+    }
+
+    .expert .btn{
+        padding: 0.6rem 0;
+        width: 40%;
+        font-size: 0.8rem;
+    }
+
+    .extensive .research-info{
+        padding: 2rem 1.2rem;
+        width: 80%;
+    }
+
+    .familiar h1{
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+    
+    .familiar p{
+        width: 80%;
+    }
+
+    .expert .info h1{
+        font-size: 1.2rem;
+        line-height: 28px;
+    
+    }
+    
+    .expert .info p{
+        width: 80%;
+    }
+
+    .extensive .research-info .research-title{
+        font-size: 1.2rem;
+        font-family: 28px;
+    }
+    
+    .extensive .research-info .research-desc{
+        font-size: 0.88rem;
+        line-height: 18px;
+    }
 }
