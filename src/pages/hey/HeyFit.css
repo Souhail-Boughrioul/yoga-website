@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.fit-journey{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #000,#1f1f1f);
+}
+
+.fit-content{
+    width: 80vw;
+    display: flex;
+}
+
+.fit-content .fit-info{
+    width: 50%;
+    margin: 4rem 0;
+
+}
+
+.fit-content .fit-info .title{
+    font-size: 5rem;
+    color: #fff;
+    line-height: 100px;
+    font-style: italic;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.fit-content .fit-info .title span{
+    color: aqua;
+}
+
+.fit-content .fit-info .desc{
+    font-size: 1.25rem;
+    color: #e6e6e7;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 4rem;
+    width: 90%;
+}
+
+.fit-content .fit-img{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.fit-content .fit-img img{
+    width: 100%;
+    display: block;
+}
+
+.fit-content .links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.fit-content .qr-fit{
+    width: 7rem;
+    border-radius: 5px;
+   
+}
+
+.fit-content .rat-fit{
+    width: 8rem;
+}
+
+@media (max-width:1200px) {
+    .fit-content{
+        width: 90vw;
+    }
+
+    .fit-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fit-content .fit-info .title{
+        font-size: 3rem;
+        line-height: 65px;
+    }
+    
+    .fit-content .fit-info .desc{
+        font-size: 1.2rem;
+        line-height: 20px;
+    }
+
+    .fit-content .qr-fit{
+        width: 6rem;       
+    }
+    
+    .fit-content .rat-fit{
+        width: 7rem;
+    }
+}
+
+@media (max-width:1170px){
+    .fit-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fit-content .fit-img{
+       order: -1;
+    }
+
+    .fit-content .fit-info{
+        width: 100%;
+        text-align: center;
+        margin-top: -4rem;
+    }
+
+    .fit-content .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fit-content .fit-info .desc{
+        margin-bottom: 3rem;
+        width: 80%;
+        text-align: center;
+        margin: 1rem auto 3rem auto;
+    }
+}
+
+@media (max-width: 750px) {
+    .fit-content .fit-info .title{
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+    
+    .fit-content .fit-info{
+      margin-bottom: 2rem;
+    
+    }
+    .fit-content .fit-info .desc{
+        font-size: 1.1rem;
+        line-height: 18px;
+        width: 90%;
+    }
+
+    .fit-content .qr-fit{
+        width: 6rem;       
+    }
+    
+    .fit-content .rat-fit{
+        width: 7rem;
+    }
+}

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -14,7 +14,7 @@ const NavBar = () => {
             <button className="hamburger" onClick={toggleNav}><i className="fa-solid fa-bars"></i></button>
             <ul className="nav-list" >
                 <li><Link to="/hello" className="link">HeyZen</Link></li>
-                <li><a href="#" className="link">HeyFit</a></li>
+                <li><Link to='/heyfit' className="link">HeyFit</Link></li>
                 <li className="dropdown">
                    <a href="#" className="dropdown-toggle link">FreeTools</a>
                     <ul className="dropdown-menu">

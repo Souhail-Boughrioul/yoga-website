@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer"
 import NavBar from "./components/NavBar"
 import HomePage from "./pages/HomePage"
 import HelloPage from "./pages/hello/HelloPage"
+import HeyFit from "./pages/hey/HeyFit"
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path='/hello' element={<HelloPage/>}/>
+          <Route path='/heyfit' element={<HeyFit/>}/>
         </Routes>
       </main>
       <Footer/>

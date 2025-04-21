@@ -5,6 +5,7 @@ import { MdArrowOutward } from 'react-icons/md';
 import { sliderItems, STEPS } from '../../constants';
 import Slider from '../../components/slider/Slider';
 import { FaCheckCircle } from 'react-icons/fa';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 const CardStep = ({step,title,desc,show})=>{
     return(
@@ -255,13 +256,12 @@ const HelloPage = () => {
         </div>
 
         {/* *** well experts */}
-        <div className="well-experts">
-            <motion.div 
-                className="well-content"
+        <motion.div className="well-experts" 
                 initial={{ opacity: 0, y: 100 }}   
                 whileInView={{ opacity: 1, y: 0 }}   
                 viewport={{ once: true, amount: 0  }}   
-                transition={{ duration: 1 }} >
+                transition={{ duration: 1 }}>
+            <div className="well-content">
                 <div className="well-info">
                     <h1 className='title'>Created with wellness experts</h1>
                     <div className="type">
@@ -286,11 +286,15 @@ const HelloPage = () => {
 
                     <button className='btn'>Take mental health test</button>
                 </div>
-            </motion.div>
-        </div>
+            </div>
+        </motion.div>
 
         {/* ***** research */}
-        <div className="research">
+        <motion.div 
+            initial={{ opacity: 0, y: 100 }}   
+            whileInView={{ opacity: 1, y: 0 }}   
+            viewport={{ once: true, amount: 0  }}         
+            transition={{ duration: 1 }} className="research">
             <div className="research-content">
                 <div className="extensive">
                     <div className="research-info">
@@ -318,7 +322,30 @@ const HelloPage = () => {
                     <button className='btn'><MdArrowOutward /></button>
                 </div>
             </div>
+        </motion.div>
+
+        <div className="well-journey">
+            <div className="journey-cont">
+                <div className="journey-info">
+                    <h1 className='title-journey'>Start Your <span>Wellness Journey</span> Today</h1>
+                    <p className='journey-desc'>Join others who’ve transformed their lives with our expert-guided programs, reducing stress and finding balance.</p>
+                    <div className="qr-container">
+                        <img className='qr-jr' src="src/assets/qr-code.png" alt="" />
+                        <div className="links">
+                            <img className='ios-jr' src="src/assets/heyzen-ios-short.webp" alt="" />
+                            <img className='and-jr' src="src/assets/heyzen-android-short.webp" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="journey-img">
+                    <img className='phone-jr' src="src/assets/heywellness-app-mockup.webp" alt="" />
+                </div>
+            </div>
         </div>
+
+        <Outlet/>
+
     </>
   )
 }

@@ -15,6 +15,7 @@ function Slider({ items }) {
     setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex));
   };
 
+
   return (
     <div className="slider-container">
       <div 

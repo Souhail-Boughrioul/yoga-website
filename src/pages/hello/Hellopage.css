@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .hello{
     min-width: 100vw;
     min-height: 60vh;
@@ -619,14 +621,14 @@
 }
 
 .well-experts .well-content{
-    max-width: 80vw;
+    width: 100vw;
     background-image: url('src/assets/list-banner-bg.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:right;
-    min-height: 60vh;
-    border-radius: 2rem;
+    background-position: center;
+    min-height: 70vh;
     padding: 3rem;
+    padding-left: 10%;
     display: flex;
     align-items: center;
 }
@@ -845,6 +847,7 @@
     line-height: 20px;
     color: #fff;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .familiar{
@@ -891,6 +894,90 @@
 .familiar .btn:hover{
     transform: rotate(45deg);
     background: #091e42;
+}
+
+/* *** journey well */
+.well-journey{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.journey-cont{
+    width: 80vw;
+    display: flex;
+    gap: 1rem;
+    background: #f3f9ff;
+    border-radius: 2rem;
+    height: 80vh;
+}
+
+.journey-cont .journey-info{
+    flex: 1;
+}
+.journey-cont .journey-info .qr-jr{
+    width: 8rem;
+}
+
+.journey-cont .journey-info{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.journey-cont .journey-info .title-journey{
+    font-size: 3.75rem;
+    color: #091e42;
+    font-weight: 600;
+    line-height: 80px;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.journey-cont .journey-info .journey-desc{
+    font-size: 1.25rem;
+    line-height: 26px;
+    font-weight: 500;
+    color: #42526d;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.journey-cont .journey-info .title-journey span{
+    color: #3395ff;
+    font-weight: 700;
+}
+
+.journey-cont .journey-info .qr-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.journey-cont .journey-info .qr-container .links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.journey-info .qr-container .links .ios-jr{
+    width: 8rem;
+}
+.journey-info .qr-container .links .and-jr{
+    width: 8rem;
+}
+
+.journey-cont .journey-img{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.journey-cont .journey-img .phone-jr{
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 1200px) {
@@ -947,8 +1034,11 @@
     }
     
     .well-experts .well-content{
-        width: 90vw;
-        padding: 2rem;
+        width: 100vw;
+        padding: 2rem 5%;
+        background-position:  right;
+        border-radius: 0;
+        border-radius: 1rem;
     }
 
     /* **** research */
@@ -958,7 +1048,26 @@
     .research-content{
         width: 90vw;
     }
+
+    /* *** journey well */
+    .well-journey{
+        margin-bottom: 5rem;
+    }
+
+    .journey-cont{
+        width: 90vw;
+        height: 70vh;
+    }
     
+    .journey-cont .journey-info .title-journey{
+        font-size: 3rem;
+        line-height: 70px;
+    }
+    
+    .journey-cont .journey-info .journey-desc{
+        font-size: 1.2rem;
+        line-height: 20px;   
+    }
 }
 
 @media (max-width: 1170px){
@@ -1123,7 +1232,8 @@
         min-height: 80vh;
         display: flex;
         align-items: flex-end;    
-        padding: 1.5rem;
+        padding: 2rem 5%;;
+        width: 100vw;
     }
     
     .well-content .well-info{
@@ -1197,6 +1307,35 @@
         font-size: 1rem;
     }
     
+    /* **** well-journey */
+    .journey-cont .journey-info .title-journey{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    
+    .journey-cont .journey-info .journey-desc{
+        font-size: 1.2rem;
+        line-height: 20px;  
+        width: 80%; 
+    }
+
+    .journey-cont .journey-info .qr-jr{
+        width: 6rem;
+    }
+
+    .journey-info .qr-container .links .ios-jr{
+        width: 6.5rem;
+    }
+    .journey-info .qr-container .links .and-jr{
+        width: 6.5rem;
+    }
+
+    .journey-cont .journey-img .phone-jr{
+        width: 100%;
+        display: block;
+        height: 90%;
+    }
+    
 }
 
 @media (max-width: 750px) {
@@ -1234,7 +1373,8 @@
      /* **** well experts */
      .well-experts .well-content{
         min-height: 90vh;  
-        padding: 1.2rem;
+        padding: 2rem 5%;
+        width: 100vw;
     }
     
     .well-content .well-info{
@@ -1305,5 +1445,45 @@
     .extensive .research-info .research-desc{
         font-size: 0.88rem;
         line-height: 18px;
+    }
+
+    /* *** well journey */
+    .journey-cont{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .journey-cont .journey-info .journey-desc{
+        text-align: center;
+        width: 80%;
+
+    }
+
+    .journey-cont .journey-info{
+        margin: 2rem 1rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .journey-cont .journey-info .title-journey{
+        font-size: 2rem;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .journey-cont .journey-img{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .journey-cont .journey-img .phone-jr{
+        width: 80%;
+        display: block;
+        margin-top: auto;
     }
 }
