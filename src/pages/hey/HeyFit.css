@@ -69,6 +69,82 @@
     width: 8rem;
 }
 
+/* body-parts */
+.body-parts{
+    background: #1b1b1c;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.body-content{
+    width: 80vw;
+}
+
+.body-info {
+    width: 50%;
+}
+
+.body-info .title{
+    font-size: 3.75rem;
+    color: #fff;
+    font-weight: 900;
+    line-height: 64px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.body-info .desc{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #434347;
+    line-height: 18px;
+    width: 50%;
+    color: #ffffff79;
+}
+
+.body-content .body-img{
+    width: 100%;
+    margin-top: -7rem;
+}
+ 
+.body-content .body-img img{
+    width: 100%;
+}
+
+/* exercices */
+.exercices{
+    background: #161616;
+}
+
+.exercices .title{
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    line-height: 60px;
+    font-style: italic;
+}
+
+.exercices .item-2{
+    background: linear-gradient(to right, #213b3c, #335c5d) !important;
+}
+.exercices .item-3{
+    min-width: 250px !important;
+    min-height: 160px;
+
+}
+
+.exercices .item-5{
+    background: linear-gradient(to right, #213b3c, #335c5d) !important;
+}
+.exercices .item-5 p{
+    color: #fff !important;
+}
+
 @media (max-width:1200px) {
     .fit-content{
         width: 90vw;
@@ -96,6 +172,25 @@
     
     .fit-content .rat-fit{
         width: 7rem;
+    }
+
+    /* body-parts */
+    .body-content{
+        width: 90vw;
+    }
+
+    .body-info .title{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .body-info {
+        width: 60%;
+    }
+
+    /* exercises */
+    .exercices .title{
+        font-size: 3rem;
     }
 }
 
@@ -128,6 +223,20 @@
         text-align: center;
         margin: 1rem auto 3rem auto;
     }
+
+    /* body-parts */
+    .body-parts{
+        padding: 3rem 0;
+    }
+
+    .body-info .desc{
+        width: 70%;
+    }
+
+    .body-content .body-img{
+        margin-top: -3rem;
+    }
+     
 }
 
 @media (max-width: 750px) {
@@ -152,5 +261,30 @@
     
     .fit-content .rat-fit{
         width: 7rem;
+    }
+
+    /* body-parts */
+    .body-info .title{
+        font-size: 2.5rem;
+        line-height: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .body-info {
+        width: 100%;
+    }
+
+    .body-info .desc{
+        width: 90%;
+    }
+
+    .body-content .body-img{
+        margin-top: 2rem;
+    }
+
+      /* exercises */
+      .exercices .title{
+        font-size: 2.5rem;
+        line-height: 55px;
     }
 }
