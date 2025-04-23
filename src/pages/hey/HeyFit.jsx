@@ -1,6 +1,7 @@
 import './HeyFit.css'
 import '../hello/Hellopage.css'
 import { useEffect, useState } from 'react';
+import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const HeyFit = () => {
 
@@ -47,6 +48,7 @@ const HeyFit = () => {
       </div>
     </div>
 
+    {/* exercices */}
     <div className="mental exercices">
                 <h1 className='title'>100+ exercises for your body</h1>
                 <div className="rows">
@@ -130,6 +132,62 @@ const HeyFit = () => {
                 </div>
         
     </div>
+
+    {/* fit-programs */}
+    <div className="fit-programs">
+      <div className="program-content">
+        <h1 className='title'>Our most popular fitness programs</h1>
+
+        <div className="grids">
+          <div className="grid-col grid-col-1">
+            <div className="grid-info">
+              <h3 className='title-grid'>Energy Boost Express</h3>
+              <p className='desc'>Reclaim your energy with quick, powerful workouts that leave you feeling refreshed and revitalized. Perfect for busy days when you need a fast pick-me-up.</p>
+            </div>
+          </div>
+
+          <div className="grid-col grid-col-2">
+            <div className="grid-info">
+              <h3 className='title-grid'>Lazy Workouts</h3>
+              <p className='desc'>Too tired to move? These simple workouts will keep you fit and energized without pushing too hard.</p>
+            </div>
+          </div>
+
+          <div className="grid-col grid-col-3">
+            <div className="grid-info">
+              <h3 className='title-grid'>Goal-Focused Training</h3>
+              <p className='desc'>Target your goals with tailored routines for toning, building strength, and increasing flexibility, perfect for any fitness level.</p>
+            </div>
+          </div>
+
+          <div className="grid-col grid-col-4">
+            <div className="grid-info">
+              <h3 className='title-grid'>Fat-Burning HIIT</h3>
+              <p className='desc'>Torch calories and boost your metabolism in minutes with personalized high-intensity interval training.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="workouts">
+          <div className="workouts-info">
+            <h2 className='title-workout'>Work out anywhere!</h2>
+            <p>Download HeyFit now and start transforming your body with expert guidance!</p>
+          </div>
+          <div className="arrows">
+            <MdOutlineKeyboardDoubleArrowRight />
+          </div>
+          
+          <div className="links">
+            <img className='qr-img' src="src/assets/qr-code.png" alt="" />
+            <div className="download">
+              <img className='app-store' src="src/assets/app-store.png" alt="" />
+              <img className='google-play' src="src/assets/google-play.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </>
   )
 }
