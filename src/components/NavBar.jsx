@@ -16,7 +16,7 @@ const NavBar = () => {
                 <li><Link to="/hello" className="link">HeyZen</Link></li>
                 <li><Link to='/heyfit' className="link">HeyFit</Link></li>
                 <li className="dropdown">
-                   <a href="#" className="dropdown-toggle link">FreeTools</a>
+                   <a href="#tool" className="dropdown-toggle link">FreeTools</a>
                     <ul className="dropdown-menu">
                         <li><a href="#" >ADHD Test</a></li>
                         <li><a href="#" >Anxiety Test</a></li>

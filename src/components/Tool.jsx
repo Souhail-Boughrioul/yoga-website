@@ -2,7 +2,7 @@ import ToolCard from "./ToolCard"
 
 const Tool = () => {
   return (
-    <div className="tool">
+    <div id="tool" className="tool">
         <div className="container tool-content">
             <div className="tool-header">
                 <div className="tool-info">

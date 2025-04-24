@@ -151,7 +151,7 @@
     min-width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 10rem 0;
+    padding: 10rem 0 15rem 0;
     font-family: "Poppins", sans-serif;
 }
 
@@ -295,6 +295,86 @@
     width: 9rem;
 }
 
+/* transformation */
+.transformation-bo{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background: #f5f5f6;
+    margin-top: -5rem;
+}
+
+.transformation-content{
+    width: 80vw;
+    display: flex;
+    gap: 2rem;
+}
+
+.transformation-content .transformation-info{
+    width: 40%;
+    padding: 3rem 0;
+}
+.transformation-content .transformation-info .title-tr{
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 64px;
+    color: #28282a;
+    font-style: italic;
+    width: 70%;
+    margin: 0;
+}
+.transformation-content .transformation-info .title-tr span{
+    color: #0c9591;
+}
+
+.transformation-content .transformation-info .desc-tr{
+    font-size: 1rem;
+    color: #696a71;
+    font-weight: 400;
+    line-height: 18px;
+    width: 60%;
+
+}
+
+.transformation-content .transformation-img{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: -5rem;
+}
+.transformation-content .transformation-img img{
+    width: 100%;
+    display: block;
+
+}
+
+.transformation-content .transformation-info .links-bo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.transformation-content .transformation-info .download-bo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.transformation-content .transformation-info .qr-bo{
+    width: 8rem;
+    border-radius: 5px;
+}
+
+.transformation-content .transformation-info .app-store{
+    width: 10rem;
+}
+.transformation-content .transformation-info .google-play{
+    width: 10rem;
+}
+
 @media (max-width:1200px) {
     .fit-content{
         width: 90vw;
@@ -345,7 +425,7 @@
 
     /* fit programs */
     .fit-programs{
-        padding: 5rem 0;
+        padding: 5rem 0 10rem;
     }
 
     .program-content{
@@ -404,6 +484,44 @@
     .workouts {
         padding: 1.5rem 3rem;
     }
+
+    /* transformation */
+    .transformation-content{
+        width: 90vw;
+        gap: 2rem;
+    }
+
+    .transformation-content .transformation-info{
+        width: 50%;
+    }
+    .transformation-content .transformation-info .title-tr{
+        font-size: 3rem;
+        line-height: 60px;
+        width: 90%;
+    }
+
+    .transformation-content .transformation-info .desc-tr{
+        width: 80%;
+    
+    }
+    
+    .transformation-content .transformation-img{
+        width: 50%;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    .transformation-content .transformation-info .qr-bo{
+        width: 7rem;
+    }
+    
+    .transformation-content .transformation-info .app-store{
+        width: 9rem;
+    }
+    .transformation-content .transformation-info .google-play{
+        width: 9rem;
+    }
+    
 }
 
 @media (max-width:1170px){
@@ -544,5 +662,49 @@
 
     .workouts {
         padding: 1rem 1.5rem;
+    }
+
+    
+    /* transformation */
+    .transformation-content{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    
+    .transformation-content .transformation-info{
+        width: 100%;
+        text-align: center;
+    }
+    .transformation-content .transformation-info .title-tr{
+        font-size: 2.5rem;
+        line-height: 55px;
+        width: 100%;
+    }
+
+    .transformation-content .transformation-info .desc-tr{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .transformation-content .transformation-info .links-bo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .transformation-content .transformation-info .download-bo{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .transformation-content .transformation-img{
+        width: 100%;
+    }
+
+    .transformation-content .transformation-info .qr-bo{
+        display: none;
     }
 }

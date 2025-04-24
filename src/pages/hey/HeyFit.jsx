@@ -188,6 +188,26 @@ const HeyFit = () => {
       </div>
     </div>
 
+    {/* transformation  */}
+    <div className="transformation-bo">
+      <div className="transformation-content">
+        <div className="transformation-info">
+          <h1 className='title-tr'>Start Your <span>Transformation</span> Today</h1>
+          <p className='desc-tr'>Sweat, push limits, and achieve your goals. Join thousands who’ve reshaped their lives with HeyFit’s expert programs. Download the app now and take the first step toward a stronger, healthier you!</p>
+          <div className="links-bo">
+            <img className='qr-bo' src="src/assets/qr-code.png" alt="" />
+            <div className="download-bo">
+              <img className='app-store' src="src/assets/app-store.png" alt="" />
+              <img className='google-play' src="src/assets/google-play.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="transformation-img">
+          <img src="src/assets/image-88.webp" alt="" />
+        </div>
+      </div>
+    </div>
+
     </>
   )
 }
