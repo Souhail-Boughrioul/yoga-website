@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.magazines{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.magazines-content{
+    width: 80vw;
+    text-align: center;
+}
+
+.magazines-content .title-mag{
+    font-size: 6.25rem;
+    margin: 0;
+    font-weight: 400;
+    line-height: 120px;
+    color: #091e42;
+    font-family: "Quicksand", sans-serif;
+}
+
+.magazines-content .title-mag span{
+    font-weight: 600;
+}
+
+.magazines-content .desc-mag{
+    font-size: 1.25rem;
+    width: 55%;
+    margin: 1rem auto 3rem auto;
+    color: #42526d;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.magazines-content .form-mag{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #5679b06b;
+    border-radius: 3rem;
+}
+
+.magazines-content .form-mag .input-mag{
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+}
+
+.magazines-content .form-mag .btn-mag{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+    background: #08162b;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 0.5rem;
+    transition: all 0.3s;
+}
+
+.magazines-content .form-mag .btn-mag:hover{
+    background: #0e2c61;
+}
+
+/* mental section */
+.mentals{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 5rem 0;
+}
+
+.mentals-content{
+    width: 80vw;
+    border-top: 1px solid rgba(128, 128, 128, 0.268);
+}
+
+.mentals-content .header-mental{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.mentals-content .header-mental .title-mental{
+    font-size: 2.5rem;
+    margin: 0;
+    color: #091e42;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.mentals-content .header-mental .btn-mental{
+    background: none;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    border: 1px solid #091e42;
+    border-radius: 2rem;
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mentals-content .header-mental .btn-mental:hover{
+    background: #091e42;
+    color: #fff;
+}
+
+.mentals-content .cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    min-height: 70vh;
+}
+
+/* workbook bottom */
+.workbooks{
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+    margin-top: 10rem;
+    background: #fafbfd;
+}
+
+.workbooks .tool-footer{
+    width: 80vw;
+    display: flex;
+}
+
+.workbooks .tool-footer .workbook-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.tool-footer .workbook-container .title{
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    color: #091e42;
+    font-family: "Quicksand", sans-serif;
+    line-height: 42px;
+}
+
+.tool-footer .workbook-container .title span{
+    background: #d0e794;
+}
+
+.tool-footer .workbook-container .desc{
+    font-size: 1.13rem;
+    color: #42526d;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 2rem;
+    width: 70%;
+}
+
+.tool-footer .workbook-container .btn{
+    background: #091e42;
+    width: 50%;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    line-height: 20px;
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+}
+
+.workbooks .tool-img{
+    position: absolute;
+    right: -2rem;
+    bottom: 0;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .magazines-content{
+        width: 90vw;
+    }
+
+    .magazines-content .title-mag{
+        font-size: 4.5rem;
+        line-height: 70px;
+    }
+
+    .magazines-content .desc-mag{
+        font-size: 1.2rem;
+        width: 70%;
+        margin: 1rem auto 2rem auto;
+        line-height: 20px;
+    }
+
+    /* mental section */
+    .mentals-content{
+        width: 90vw;
+    }
+
+    .mentals-content .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    /* workbook */
+    .workbooks{
+        min-height: 50vh;
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    .workbooks .tool-footer{
+        width: 90vw;
+    }
+
+    .workbooks .tool-footer .workbook-container{
+        width: 60%;
+    }
+
+    .workbooks .tool-img{
+        width: 60%;
+    }
+
+  
+}
+
+@media (max-width: 1170px) {
+    .magazines-content .title-mag{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .magazines-content .desc-mag{
+        font-size: 1rem;
+    }
+
+
+    .magazines-content .form-mag{
+        width: 70%;
+    }
+
+    /* workbook */
+    .workbooks .tool-footer .workbook-container{
+        padding: 1rem 0;
+    }
+
+    .workbooks .tool-footer .workbook-container{
+        width: 50%;
+    }
+
+    .tool-footer .workbook-container .title{
+        font-size: 2.2rem;
+        line-height: 38px;
+    }
+
+    .tool-footer .workbook-container .desc{
+        font-size: 1rem;
+        line-height: 18px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .magazines-content .title-mag{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .magazines-content .desc-mag{
+        width: 80%;
+    }
+
+
+    .magazines-content .form-mag{
+        width: 100%;
+    }
+
+    .magazines-content .form-mag .btn-mag{
+        padding: 0.9rem 1.5rem;
+    }
+
+    .magazines-content .form-mag .input-mag{
+        padding-right: 0;
+    }
+
+    /* mental section */
+    .mentals-content .header-mental .btn-mental{
+        width: 30%;
+        padding: 0.8rem;
+    }
+    
+    .mentals-content .cards-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* workbook */
+    .workbooks .tool-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .workbooks .tool-img{
+       display: block;
+       position: relative;
+       min-width: 100%;
+       transform: translateX(0.5rem);
+    }
+
+    .workbooks .tool-footer .workbook-container{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .tool-footer .workbook-container .title span{
+        background: none;
+    }
+
+    .tool-footer .workbook-container .btn{
+        width: 40%;
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+    
+}

@@ -236,6 +236,13 @@ export const MAGAZINE = [
         date: 'April 3, 2025 |',
         time: '12 mins read',
     },
+    {
+        id: 4,
+        src: 'src/assets/young-slim.jpg',
+        title: '12 Best Glute Exercises for Women: Building a Stronger, Lifted Booty at Home',
+        date: 'March 5, 2025|',
+        time: '10 mins read', 
+    }
 ]
 
 

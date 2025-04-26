@@ -15,28 +15,14 @@ const NavBar = () => {
             <ul className="nav-list" >
                 <li><Link to="/hello" className="link">HeyZen</Link></li>
                 <li><Link to='/heyfit' className="link">HeyFit</Link></li>
-                <li className="dropdown">
-                   <a href="#tool" className="dropdown-toggle link">FreeTools</a>
-                    <ul className="dropdown-menu">
-                        <li><a href="#" >ADHD Test</a></li>
-                        <li><a href="#" >Anxiety Test</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" className="link">Health Magazine</a></li>
+                <li><Link to='/health' className="link">Health Magazine</Link></li>
             </ul>
 
             <ul className="sidebar" id="sidebar">
                 <li><i onClick={toggleNav} className="btn-close fa-solid fa-xmark"></i></li>
-                <li><a href="#">HeyZen</a></li>
-                <li><a href="#">HeyFit</a></li>
-                <li className="dropdown">
-                   <a href="#" className="dropdown-toggle">FreeTools</a>
-                    <ul className="dropdown-menu">
-                        <li><a href="#" >ADHD Test</a></li>
-                        <li><a href="#" >Anxiety Test</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" className="link">Health Magazine</a></li>
+                <li><Link onClick={toggleNav} to='/hello' className="link">HeyZen</Link></li>
+                <li><Link onClick={toggleNav} to='/heyfit' className="link">HeyFit</Link></li>
+                <li><Link onClick={toggleNav}  to='/health' className="link">Health Magazine</Link></li>
             </ul>
         </nav> 
     </div>

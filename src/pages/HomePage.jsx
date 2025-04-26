@@ -11,7 +11,7 @@ import Tool from "../components/Tool"
 const HomePage = () => {
   return (
     <div>
-        <Hero/>
+      <Hero/>
       <Products/>
       <About/>
       <Journey/>
